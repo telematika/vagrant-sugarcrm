@@ -6,7 +6,7 @@ DB_USERNAME="root"
 DB_PASSWORD="password"
 DB_ADMIN_USER="sugarcrm"
 DB_ADMIN_PASSWORD=`pwgen -cns 16`
-SITE_ADMIN_PASSWORD=`pwgen -cns`
+SITE_ADMIN_PASSWORD="password"
 SUGAR_SRC="https://github.com/telematika/sugarcrm_dev.git"
 SUGAR_WWW=/var/www
 
