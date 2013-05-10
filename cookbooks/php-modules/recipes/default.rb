@@ -20,6 +20,10 @@ package "php5-imagick" do
   action :install
 end
 
+package "php5-imap" do
+  action :install
+end
+
 package "php5-mcrypt" do
   action :install
 end
