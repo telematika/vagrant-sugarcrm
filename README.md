@@ -17,4 +17,4 @@ This is a [vagrant](http://www.vagrantup.com) configuration using [chef](http://
 
 1. check out this repository
 2. run `vagrant up`
-
+3. Login to sugar using "admin" as username and "password" as password
