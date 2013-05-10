@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo apt-get install -y curl pwgen
+
 DB_USERNAME="root"
 DB_PASSWORD="password"
 DB_ADMIN_USER="sugarcrm"
