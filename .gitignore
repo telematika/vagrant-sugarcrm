@@ -1,0 +1,7 @@
+*.un~
+.*.sw[a-z]
+.DS_Store*
+Desktop.ini
+Session.vim
+Thumbs.db
+.vagrant
