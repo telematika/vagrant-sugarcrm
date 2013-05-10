@@ -28,7 +28,7 @@ if [[ ! -f "${SUGAR_WWW}/index.php" ]]; then
   rm -rf "${SUGAR_WWW}/.git"
 
   echo "Creating configuration for silent installer..."
-cat > "${SUGAR_WWW}/config_si.php" << EOF
+  cat > "${SUGAR_WWW}/config_si.php" << EOF
 <?php
 \$sugar_config_si = array (
   'setup_db_host_name' => 'localhost',
@@ -59,13 +59,12 @@ cat > "${SUGAR_WWW}/config_si.php" << EOF
 );
 ?>
 EOF
-
   echo "Setting file system permissions..."
   sudo chown -Rfh www-data:www-data "${SUGAR_WWW}"
 
   SILENT_URL="http://localhost/install.php?goto=SilentInstall&cli=true"
   echo "Calling silent installer url : ${SILENT_URL}"
-  curl "${SILENT_URL}
+  curl "${SILENT_URL}"
 
   echo "Done."
 
