@@ -61,6 +61,10 @@ EOF
   echo "Setting file system permissions..."
   sudo chown -Rfh www-data:www-data "${SUGAR_WWW}"
 
+  SILENT_URL="http://localhost/install.php?goto=SilentInstall&cli=true"
+  echo "Calling silent installer url : ${SILENT_URL}"
+  curl "${SILENT_URL}
+
   echo "Done."
 
   echo "Credentials: admin : ${SITE_ADMIN_PASSWORD}"
